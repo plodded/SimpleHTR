@@ -17,7 +17,7 @@ class Model:
 	"minimalistic TF model for HTR"
 
 	# model constants
-	batchSize = 50
+	batchSize = 64
 	imgSize = (128, 32)
 	maxTextLen = 32
 
