@@ -47,6 +47,9 @@ class DataLoader:
 			
 			lineSplit = line.strip().split(' ')
 			assert len(lineSplit) >= 9
+			if lineSplit[1]=='err':
+				continue
+			
 			
 			# filename: part1-part2-part3 --> part1/part1-part2/part1-part2-part3.png
 			fileNameSplit = lineSplit[0].split('-')
